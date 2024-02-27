@@ -1,0 +1,52 @@
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 4fr 5fr 6fr;
+    grid-template-rows: 20fr 6fr 10fr 25fr;
+    /* grid-auto-columns: 1fr;  NO LO USAMOS*/
+    /* gap: 0px 0px; NO LO USAMOS*/
+    /* grid-auto-flow: row; NO LO USAMOS*/
+    grid-template-areas:
+        "promo1 promo1 promo1 promo2"
+        "promo3 promo3 promo4 promo2"
+        "promo3 promo3 promo4 promo6"
+        "promo5 promo5 promo4 promo6";
+}
+
+.main h1{
+    text-align: center;
+}
+
+.promo1 {
+    grid-area: promo1;
+    background-color: #8a2be2;
+}
+
+.promo2 {
+    grid-area: promo2;
+    background-color: #663197;
+}
+
+.promo3 {
+    grid-area: promo3;
+    background-color: #43156e;
+}
+
+.promo4 {
+    grid-area: promo4;
+    background-color: #e22bb7;
+}
+
+.promo5 {
+    grid-area: promo5;
+    background-color: #e5547a;
+}
+
+.promo6 {
+    grid-area: promo6;
+    background-color: #ef5f5f;
+}
+
+.grid div:nth-child(){ /*para proyectos grandes*/
+    color: orange;
+    background-color: bisque;
+}

@@ -1,0 +1,104 @@
+/*El nombre empieza con _ para indicar que es una rama de la hoja principal (main.scss)*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif; }
+
+.header nav ul {
+  display: flex;
+  list-style: none; }
+  .header nav ul li {
+    padding: 0 1rem; }
+    .header nav ul li a {
+      color: #222222;
+      text-decoration: none; }
+      .header nav ul li a .img {
+        width: 100px; }
+    .header nav ul li:hover {
+      color: white;
+      transition: all .3s; }
+  .header nav ul:hover {
+    background-color: red;
+    color: white;
+    text-decoration: underline;
+    transition: all .3s; }
+
+.header nav .banner-promo img {
+  width: 100px; }
+
+.header nav:__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.visitado:visited {
+  color: #b5b5b5; }
+
+.montana:active {
+  background-color: #8375ec;
+  color: white; }
+
+.coder:link {
+  color: #e22bb7;
+  background-color: #a6ec75; }
+
+.a:not(.coder) {
+  background-color: #ababdd;
+  color: white; }
+
+.montana:active {
+  background-color: #ababdd;
+  color: white; }
+
+@media (max-width: 600px) {
+  .header {
+    background-color: #f31d1d; } }
+
+@media (max-width: 600px) {
+  .header nav {
+    flex-direction: column; } }
+
+@media (max-width: 400) {
+  .header nav ul {
+    justify-content: center; } }
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 4fr 5fr 6fr;
+  grid-template-rows: 20fr 6fr 10fr 25fr;
+  /* grid-auto-columns: 1fr;  NO LO USAMOS*/
+  /* gap: 0px 0px; NO LO USAMOS*/
+  /* grid-auto-flow: row; NO LO USAMOS*/
+  grid-template-areas: "promo1 promo1 promo1 promo2" "promo3 promo3 promo4 promo2" "promo3 promo3 promo4 promo6" "promo5 promo5 promo4 promo6"; }
+
+.main h1 {
+  text-align: center; }
+
+.promo1 {
+  grid-area: promo1;
+  background-color: #8a2be2; }
+
+.promo2 {
+  grid-area: promo2;
+  background-color: #663197; }
+
+.promo3 {
+  grid-area: promo3;
+  background-color: #43156e; }
+
+.promo4 {
+  grid-area: promo4;
+  background-color: #e22bb7; }
+
+.promo5 {
+  grid-area: promo5;
+  background-color: #e5547a; }
+
+.promo6 {
+  grid-area: promo6;
+  background-color: #ef5f5f; }
+
+.grid div:nth-child() {
+  /*para proyectos grandes*/
+  color: orange;
+  background-color: bisque; }
